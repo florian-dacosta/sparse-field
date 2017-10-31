@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <record id="test_stock_picking_view" model="ir.ui.view">
+            <field name="name">test.stock_picking.view</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="model">stock.picking</field>
+            <field name="arch" type="xml">
+                <field name="partner_id" position="after">
+                    <field name="test_char"/>
+                    <field name="test_integer"/>
+                    <field name="test_text"/>
+                    <field name="test_float"/>
+                    <field name="test_many2one"/>
+                    <field name="test_many2many"/>
+                    <field name="test_selection"/>
+                    <field name="test_boolean"/>
+                </field>
+            </field>
+        </record>
+
+</odoo>
